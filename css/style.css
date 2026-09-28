@@ -1,0 +1,22 @@
+:root {
+    --preto: #121212;
+    --verde-escuro: #1E2A24;
+    --verde-oliva: #4F5D3A;
+    --marrom: #8B6F47;
+    --bege: #C2B280;
+    --vermelho: #A33B32;
+}
+
+body{
+    background-color: var(--preto);
+    color: var(--bege);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2{
+    font-family: 'Cinzel', serif;
+}
+
+nav, .subtitulo {
+    font-family: 'Oswald', sans-serif;
+}
