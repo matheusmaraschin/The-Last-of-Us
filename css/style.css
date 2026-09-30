@@ -1,22 +1,291 @@
 :root {
-    --preto: #121212;
-    --verde-escuro: #1E2A24;
-    --verde-oliva: #4F5D3A;
-    --marrom: #8B6F47;
-    --bege: #C2B280;
-    --vermelho: #A33B32;
+    --fundo: #D9D4C2;
+    --verde: #3F5135;
+    --verde-claro: #667653;
+    --marrom: #806548;
+    --bege: #E8E0C8;
+    --vermelho: #8C4036;
+    --texto: #30352D;
+    --branco: #F5F2E8;
 }
 
-body{
-    background-color: var(--preto);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* MENU */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 60px;
+    background-color: var(--verde);
+    z-index: 1000;
+}
+
+nav h2 {
+    margin-right: auto;
     color: var(--bege);
-    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
 }
 
-h1, h2{
-    font-family: 'Cinzel', serif;
+nav a {
+    color: var(--branco);
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-nav, .subtitulo {
-    font-family: 'Oswald', sans-serif;
+nav a:hover {
+    color: var(--bege);
+}
+
+/* INÍCIO */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--verde-escuro);
+}
+
+.hero-conteudo {
+    max-width: 700px;
+    padding: 45px;
+    background-color: var(--verde);
+    border-radius: 15px;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+    color: var(--bege);
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    color: var(--branco);
+    font-size: 20px;
+}
+
+/* BOTÕES */
+
+.botao {
+    display: inline-block;
+    padding: 11px 24px;
+    background-color: var(--verde-claro);
+    color: var(--branco);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+
+.botao:hover {
+    background-color: var(--vermelho);
+}
+
+.botao-topo {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    padding: 8px 13px;
+    background-color: var(--verde);
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 6px;
+    z-index: 1000;
+}
+
+.botao-topo:hover {
+    background-color: var(--vermelho);
+}
+
+/* SEÇÕES */
+
+.secao {
+    max-width: 1150px;
+    margin: auto;
+    padding: 80px 40px;
+}
+
+.secao > h2 {
+    margin-bottom: 45px;
+    color: var(--verde);
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* CONTEÚDO */
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.conteudo h3 {
+    margin-bottom: 15px;
+    color: var(--verde);
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.conteudo p {
+    margin-bottom: 15px;
+    color: var(--texto);
+    font-size: 16px;
+}
+
+.conteudo img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    overflow: hidden;
+    background-color: var(--verde);
+    border-radius: 10px;
+}
+
+.card:hover {
+    background-color: var(--verde-claro);
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    display: block;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 20px 20px 8px;
+    color: var(--bege);
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.card p {
+    padding: 0 20px 20px;
+    color: var(--branco);
+}
+
+.card span {
+    display: block;
+    padding: 0 20px 20px;
+    color: #CFC5A7;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* JOGOS */
+
+.jogo img {
+    height: 350px;
+}
+
+.jogo h3 {
+    font-size: 20px;
+}
+
+/* COMPRAR */
+
+.comprar {
+    max-width: 1150px;
+    text-align: center;
+}
+
+.comprar > p {
+    margin-top: -25px;
+    margin-bottom: 40px;
+    color: var(--texto);
+}
+
+.compra {
+    padding-bottom: 25px;
+}
+
+.compra h3 {
+    padding: 25px 20px 8px;
+}
+
+.compra p {
+    padding: 0 20px 20px;
+}
+
+.compra .botao {
+    margin-bottom: 5px;
+}
+
+/* SÉRIE */
+
+#serie {
+    max-width: none;
+    background-color: var(--verde-claro);
+}
+
+#serie .conteudo {
+    max-width: 1050px;
+    margin: auto;
+}
+
+#serie .conteudo h3,
+#serie .conteudo p {
+    color: var(--branco);
+}
+
+#serie .conteudo img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* RODAPÉ */
+
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--verde);
+    border-radius: 15px 15px 0 0;
+}
+
+footer h3 {
+    margin-bottom: 8px;
+    color: var(--bege);
+}
+
+footer p {
+    color: var(--branco);
 }
