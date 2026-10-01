@@ -2,7 +2,9 @@
 
 Site de fã sobre a franquia **The Last of Us**, feito como trabalho da disciplina de Desenvolvimento Web I.
 
-**Site publicado:** [https://matheusmaraschin.github.io/The-Last-of-Us/]
+**Site publicado:** https://matheusmaraschin.github.io/The-Last-of-Us/
+
+**Relatório de aprendizagem:** [RELATORIO.md](RELATORIO.md)
 
 ## Sobre o projeto
 
@@ -17,7 +19,6 @@ O site apresenta os jogos, os personagens, a história e a série The Last of Us
 - **Série:** ficha e temporadas da série da HBO
 
 ## Estrutura de pastas
-
 
 index.html
 css/
@@ -38,4 +39,4 @@ img/
 
 ## Autor
 
-[MATHEUS HENRIQUE MARASCHIN]
+Matheus Henrique Maraschin
