@@ -1,54 +1,71 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>The Last of Us - Personagens</title>
-            <link rel="stylesheet" href="../css/style.css">
-        </head>
-        <body>
-            <nav>
-                <h2>The Last of Us</h2>
-                <a href="../index.html">Início</a>
-                <a href="jogos.html">Jogos</a>
-                <a href="personagens.html">Personagens</a>
-                <a href="historia.html">História</a>
-            </nav>
-            <section class="secao">
-                <h2>Personagens</h2>
-                <div class="cards">
-                    <article class="card">
-                        <img src="../img/joel.jpg" alt="Joel">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us - Personagens</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="menu">
+        <a class="marca" href="../index.html">The Last of Us</a>
+        <ul class="menu-links">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="jogos.html">Jogos</a></li>
+            <li><a href="personagens.html" aria-current="page">Personagens</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="serie.html">Série</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header class="banner">
+            <h1>Personagens</h1>
+            <p>Quem atravessa o mundo de The Last of Us, nos jogos e na série.</p>
+        </header>
+        <section class="secao">
+            <h2>Protagonistas e família</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="../img/joel.jpg" alt="Joel">
+                    <div class="card-corpo">
                         <h3>Joel</h3>
-                        <p>
-                            Um sobrevivente experiente que atravessa um mundo
-                            devastado ao lado de Ellie.
-                        </p>
-                    </article>
-                    <article class="card">
-                        <img src="../img/ellie.jpg" alt="Ellie">
+                        <p>Um sobrevivente experiente que atravessa um mundo devastado ao lado de Ellie.</p>
+                        <span class="meta">Jogos: Troy Baker<br>Série: Pedro Pascal</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../img/ellie.jpg" alt="Ellie">
+                    <div class="card-corpo">
                         <h3>Ellie</h3>
-                        <p>
-                            Uma jovem que acompanha Joel em uma jornada
-                            que mudará a vida dos dois.
-                        </p>
-                    </article>
-                    <article class="card">
-                        <img src="../img/tommy.jpg" alt="Tommy">
+                        <p>Uma jovem que acompanha Joel em uma jornada que mudará a vida dos dois.</p>
+                        <span class="meta">Jogos: Ashley Johnson<br>Série: Bella Ramsey</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../img/tommy.jpg" alt="Tommy">
+                    <div class="card-corpo">
                         <h3>Tommy</h3>
-                        <p>
-                            Irmão de Joel e um personagem importante
-                            na história.
-                        </p>
-                    </article>
-                </div>
-            </section>
-            <footer>
-                <h3>The Last of Us</h3>
-                <p>
-                    Projeto desenvolvido para fins educacionais.
-                </p>
-            </footer>
-            <a href="#" class="voltar-topo">↑</a>
-        </body>
-    </html>
+                        <p>Irmão de Joel e um personagem importante na história.</p>
+                        <span class="meta">Jogos: Jeffrey Pierce<br>Série: Gabriel Luna</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="secao">
+            <h2>Outros rostos do caminho</h2>
+            <ul class="lista-pers">
+                <li><h3>Marlene</h3><p>Líder dos Vagalumes, grupo que busca uma cura. Interpretada por Merle Dandridge nos jogos e na série.</p></li>
+                <li><h3>Tess</h3><p>Parceira de Joel no contrabando. Jogos: Annie Wersching. Série: Anna Torv.</p></li>
+                <li><h3>Sarah</h3><p>Filha de Joel, cuja história abre o primeiro jogo. Jogos: Hana Hayes. Série: Nico Parker.</p></li>
+                <li><h3>Abby</h3><p>Personagem central de Part II. Jogos: Laura Bailey. Série: Kaitlyn Dever.</p></li>
+                <li><h3>Dina</h3><p>Amiga próxima de Ellie em Part II. Jogos: Shannon Woodward. Série: Isabela Merced.</p></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <h3>The Last of Us</h3>
+        <p>Projeto educacional feito com HTML e CSS. Site de fã sem fins lucrativos. The Last of Us pertence à Naughty Dog, à Sony Interactive Entertainment e à HBO.</p>
+    </footer>
+    <a href="#" class="botao-topo">↑</a>
+</body>
+</html>

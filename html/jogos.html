@@ -1,98 +1,84 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>The Last of Us - Jogos</title>
-            <link rel="stylesheet" href="../css/style.css">
-        </head>
-        <body>
-            <nav>
-                <h2>The Last of Us</h2>
-                <a href="../index.html">Início</a>
-                <a href="jogos.html">Jogos</a>
-                <a href="personagens.html">Personagens</a>
-                <a href="historia.html">História</a>
-            </nav>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us - Jogos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="menu">
+        <a class="marca" href="../index.html">The Last of Us</a>
+        <ul class="menu-links">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="jogos.html" aria-current="page">Jogos</a></li>
+            <li><a href="personagens.html">Personagens</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="serie.html">Série</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header class="banner">
+            <h1>Jogos</h1>
+            <p>A história de Joel e Ellie em três edições.</p>
+        </header>
+        <section class="secao">
+            <h2>A franquia</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="../img/part1.jpg" alt="The Last of Us Part I">
+                    <div class="card-corpo">
+                        <h3>The Last of Us Part I</h3>
+                        <p>Uma versão reconstruída do primeiro jogo da franquia.</p>
+                        <span class="meta">PS5 e PC</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../img/part2.jpg" alt="The Last of Us Part II">
+                    <div class="card-corpo">
+                        <h3>The Last of Us Part II</h3>
+                        <p>A continuação da história de The Last of Us.</p>
+                        <span class="meta">PS4</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../img/remastered.jpg" alt="The Last of Us Part II Remastered">
+                    <div class="card-corpo">
+                        <h3>Part II Remastered</h3>
+                        <p>Versão remasterizada de Part II, com melhorias visuais e modos extras.</p>
+                        <span class="meta">PS5 e PC</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <div class="faixa">
             <section class="secao">
-                <h2>Jogos</h2>
-                <div class="cards">
-                    <article class="card jogo">
-                        <img src="../img/part1.jpg" alt="The Last of Us Part I">
-                        <h3>The Last of Us Part I</h3>
-                        <p>
-                            Uma versão reconstruída do primeiro jogo da franquia.
-                        </p>
-                        <span>PS5 • PC</span>
-                    </article>
-                    <article class="card jogo">
-                        <img src="../img/part2.jpg" alt="The Last of Us Part II">
-                        <h3>The Last of Us Part II</h3>
-                        <p>
-                            A continuação da história de The Last of Us.
-                        </p>
-                        <span>PS4</span>
-                    </article>
-                    <article class="card jogo">
-                        <img src="../img/remastered.jpg" alt="The Last of Us Part II Remastered">
-                        <h3>The Last of Us Part II Remastered</h3>
-                        <p>
-                            Versão remasterizada de The Last of Us Part II.
-                        </p>
-                        <span>PS5 • PC</span>
-                    </article>
-                </div>
+                <h2>Em que ordem jogar</h2>
+                <p class="intro">Part II continua a história de Part I, então comece pelo primeiro.</p>
+                <table>
+                    <tr><th>Jogo</th><th>Lançamento</th><th>Plataformas</th></tr>
+                    <tr><td>The Last of Us Part I</td><td>2022 (PC em 2023)</td><td>PS5, PC</td></tr>
+                    <tr><td>The Last of Us Part II</td><td>2020</td><td>PS4</td></tr>
+                    <tr><td>Part II Remastered</td><td>2024 (PC em 2025)</td><td>PS5, PC</td></tr>
+                </table>
             </section>
-            <section class="secao comprar">
-                <h2>Onde comprar</h2>
-                <p>
-                    Escolha sua plataforma e encontre o jogo na loja correspondente.
-                </p>
-                <div class="cards">
-                    <article class="card compra">
-                        <h3>The Last of Us Part I</h3>
-                        <p>PlayStation 5</p>
-                        <a href="#" class="botao">
-                            Ver na loja
-                        </a>
-                    </article>
-                    <article class="card compra">
-                        <h3>The Last of Us Part I</h3>
-                        <p>PC</p>
-                        <a href="#" class="botao">
-                            Ver na loja
-                        </a>
-                    </article>
-                    <article class="card compra">
-                        <h3>The Last of Us Part II</h3>
-                        <p>PlayStation 4</p>
-                        <a href="#" class="botao">
-                            Ver na loja
-                        </a>
-                    </article>
-                    <article class="card compra">
-                        <h3>The Last of Us Part II Remastered</h3>
-                        <p>PlayStation 5</p>
-                        <a href="#" class="botao">
-                            Ver na loja
-                        </a>
-                    </article>
-                    <article class="card compra">
-                        <h3>The Last of Us Part II Remastered</h3>
-                        <p>PC</p>
-                        <a href="#" class="botao">
-                            Ver na loja
-                        </a>
-                    </article>
-                </div>
-            </section>
-            <footer>
-                <h3>The Last of Us</h3>
-                <p>
-                    Projeto desenvolvido para fins educacionais.
-                </p>
-            </footer>
-            <a href="#" class="voltar-topo">↑</a>
-        </body>
-    </html>
+        </div>
+        <section class="secao">
+            <h2>Onde comprar</h2>
+            <p class="intro">Escolha a plataforma e procure o jogo na loja oficial.</p>
+            <ul class="lojas">
+                <li><span>Part I • PlayStation 5</span><a class="botao" href="https://store.playstation.com/pt-br/search/the%20last%20of%20us%20part%20i">Ver na PlayStation Store</a></li>
+                <li><span>Part I • PC</span><a class="botao" href="https://store.steampowered.com/search/?term=the+last+of+us+part+i">Ver na Steam</a></li>
+                <li><span>Part II • PlayStation 4</span><a class="botao" href="https://store.playstation.com/pt-br/search/the%20last%20of%20us%20part%20ii">Ver na PlayStation Store</a></li>
+                <li><span>Part II Remastered • PlayStation 5</span><a class="botao" href="https://store.playstation.com/pt-br/search/the%20last%20of%20us%20part%20ii%20remastered">Ver na PlayStation Store</a></li>
+                <li><span>Part II Remastered • PC</span><a class="botao" href="https://store.steampowered.com/search/?term=the+last+of+us+part+ii+remastered">Ver na Steam</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <h3>The Last of Us</h3>
+        <p>Projeto educacional feito com HTML e CSS. Site de fã sem fins lucrativos. The Last of Us pertence à Naughty Dog, à Sony Interactive Entertainment e à HBO.</p>
+    </footer>
+    <a href="#" class="botao-topo">↑</a>
+</body>
+</html>

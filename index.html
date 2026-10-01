@@ -1,52 +1,65 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>The Last of Us - Início</title>
-            <link rel="stylesheet" href="css/style.css">
-        </head>
-        <body>
-            <nav>
-                <h2>The Last of Us</h2>
-                <a href="index.html">Início</a>
-                <a href="html/jogos.html">Jogos</a>
-                <a href="html/personagens.html">Personagens</a>
-                <a href="html/historia.html">História</a>
-            </nav>
-            <header class="hero">
-                <div class="hero-conteudo">
-                    <h1>The Last of Us</h1>
-                    <p>Quando a esperança sobrevive.</p>
-                    <a href="html/historia.html" class="botao">
-                        Explorar
-                    </a>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us - Início</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="menu">
+        <a class="marca" href="index.html">The Last of Us</a>
+        <ul class="menu-links">
+            <li><a href="index.html" aria-current="page">Início</a></li>
+            <li><a href="html/jogos.html">Jogos</a></li>
+            <li><a href="html/personagens.html">Personagens</a></li>
+            <li><a href="html/historia.html">História</a></li>
+            <li><a href="html/serie.html">Série</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header class="hero">
+            <div>
+                <h1>The Last of Us</h1>
+                <p class="lema">Quando a esperança sobrevive.</p>
+                <p>Uma jornada por um mundo devastado por uma pandemia. Conheça os jogos, os personagens, a história e a série.</p>
+                <a class="botao" href="html/historia.html">Conhecer a história</a>
+                <a class="botao sec" href="html/jogos.html">Ver os jogos</a>
+            </div>
+        </header>
+        <section class="secao">
+            <h2>Um mundo destruído</h2>
+            <div class="conteudo">
+                <div>
+                    <p>The Last of Us apresenta um mundo devastado por uma pandemia, onde os sobreviventes precisam enfrentar infectados, grupos armados e a própria solidão.</p>
+                    <p>Aqui você encontra um guia da franquia criada pela Naughty Dog, sem spoilers pesados.</p>
+                    <dl class="ficha">
+                        <dt>Estúdio</dt><dd>Naughty Dog</dd>
+                        <dt>Primeiro jogo</dt><dd>2013</dd>
+                        <dt>Série</dt><dd>HBO, desde 2023</dd>
+                        <dt>Gênero</dt><dd>Ação, aventura e sobrevivência</dd>
+                    </dl>
                 </div>
-            </header>
+                <img src="img/cidade.jpg" alt="Cidade abandonada tomada pela natureza">
+            </div>
+        </section>
+        <div class="faixa">
             <section class="secao">
-                <h2>Bem-vindo</h2>
-                <div class="conteudo">
-                    <div>
-                        <h3>Um mundo destruído</h3>
-                        <p>
-                            The Last of Us apresenta um mundo devastado por uma
-                            pandemia, onde os sobreviventes precisam enfrentar
-                            diversos perigos.
-                        </p>
-                        <p>
-                            Conheça a história, os personagens e os jogos da
-                            franquia.
-                        </p>
-                    </div>
-                    <img src="img/cidade.jpg" alt="Cidade abandonada">
-                </div>
+                <h2>Linha do tempo</h2>
+                <ol class="linha">
+                    <li><time>2013</time>The Last of Us chega ao PlayStation 3.</li>
+                    <li><time>2020</time>The Last of Us Part II é lançado para PS4.</li>
+                    <li><time>2022</time>The Last of Us Part I, versão reconstruída do primeiro jogo, chega ao PS5 (PC em 2023).</li>
+                    <li><time>2023</time>Estreia da série da HBO, em janeiro.</li>
+                    <li><time>2024 e 2025</time>Part II Remastered chega ao PS5 e depois ao PC. A segunda temporada da série estreia em 2025.</li>
+                </ol>
             </section>
-            <footer>
-                <h3>The Last of Us</h3>
-                <p>
-                    Projeto desenvolvido para fins educacionais.
-                </p>
-            </footer>
-            <a href="#" class="voltar-topo">↑</a>
-        </body>
+        </div>
+    </main>
+    <footer>
+        <h3>The Last of Us</h3>
+        <p>Projeto educacional feito com HTML e CSS. Site de fã sem fins lucrativos. The Last of Us pertence à Naughty Dog, à Sony Interactive Entertainment e à HBO.</p>
+    </footer>
+    <a href="#" class="botao-topo">↑</a>
+</body>
 </html>

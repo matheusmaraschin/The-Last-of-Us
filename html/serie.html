@@ -7,30 +7,51 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <h2>The Last of Us</h2>
-        <a href="../index.html">Início</a>
-        <a href="jogos.html">Jogos</a>
-        <a href="personagens.html">Personagens</a>
-        <a href="historia.html">História</a>
-        <a href="serie.html">Série</a>
+    <nav class="menu">
+        <a class="marca" href="../index.html">The Last of Us</a>
+        <ul class="menu-links">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="jogos.html">Jogos</a></li>
+            <li><a href="personagens.html">Personagens</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="serie.html" aria-current="page">Série</a></li>
+        </ul>
     </nav>
-    <section class="secao">
-        <h2>Série</h2>
-        <div class="conteudo">
-            <div>
-                <h3>The Last of Us</h3>
-                <p>A série The Last of Us é uma adaptação da história apresentada nos jogos.</p>
-                <p>A trama acompanha Joel e Ellie enquanto eles atravessam um mundo pós-apocalíptico marcado por perigos, sobreviventes e infectados.</p>
-                <p>A série apresenta personagens, lugares e acontecimentos conhecidos pelos fãs da franquia.</p>
+    <main>
+        <header class="banner">
+            <h1>Série</h1>
+            <p>A adaptação da HBO para a história dos jogos.</p>
+        </header>
+        <section class="secao">
+            <h2>The Last of Us</h2>
+            <div class="conteudo">
+                <div>
+                    <p>A série acompanha Joel e Ellie em um mundo pós-apocalíptico marcado por perigos, sobreviventes e infectados.</p>
+                    <p>Ela apresenta personagens, lugares e acontecimentos conhecidos pelos fãs, e também amplia a história de alguns deles.</p>
+                    <dl class="ficha">
+                        <dt>Emissora</dt><dd>HBO</dd>
+                        <dt>Criação</dt><dd>Craig Mazin e Neil Druckmann</dd>
+                        <dt>Estreia</dt><dd>15 de janeiro de 2023</dd>
+                        <dt>Elenco</dt><dd>Pedro Pascal (Joel) e Bella Ramsey (Ellie)</dd>
+                    </dl>
+                </div>
+                <img src="../img/serie.jpg" alt="Série The Last of Us">
             </div>
-            <img src="../img/serie.jpg" alt="Série The Last of Us">
+        </section>
+        <div class="faixa">
+            <section class="secao">
+                <h2>Temporadas</h2>
+                <div class="cards">
+                    <div class="card"><div class="card-corpo"><h3>Temporada 1 (2023)</h3><p>Nove episódios que adaptam a história do primeiro jogo.</p></div></div>
+                    <div class="card"><div class="card-corpo"><h3>Temporada 2 (2025)</h3><p>Sete episódios que começam a adaptar The Last of Us Part II.</p></div></div>
+                </div>
+            </section>
         </div>
-    </section>
+    </main>
     <footer>
         <h3>The Last of Us</h3>
-        <p>Projeto desenvolvido para fins educacionais.</p>
+        <p>Projeto educacional feito com HTML e CSS. Site de fã sem fins lucrativos. The Last of Us pertence à Naughty Dog, à Sony Interactive Entertainment e à HBO.</p>
     </footer>
-    <a href="#" class="voltar-topo">↑</a>
+    <a href="#" class="botao-topo">↑</a>
 </body>
 </html>

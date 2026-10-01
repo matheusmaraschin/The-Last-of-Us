@@ -1,12 +1,13 @@
 :root {
-    --fundo: #D9D4C2;
+    --fundo: #1B2218;
+    --card: #26301F;
     --verde: #3F5135;
-    --verde-claro: #667653;
-    --marrom: #806548;
-    --bege: #E8E0C8;
+    --verde-claro: #A9B98F;
+    --texto: #E8E0C8;
+    --papel: #D9D4C2;
+    --escuro: #30352D;
     --vermelho: #8C4036;
-    --texto: #30352D;
-    --branco: #F5F2E8;
+    --vermelho-claro: #C4604A;
 }
 
 * {
@@ -22,270 +23,315 @@ body {
     line-height: 1.6;
 }
 
-/* MENU */
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
 
-nav {
+a {
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 65px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 30px;
-    padding: 0 60px;
-    background-color: var(--verde);
-    z-index: 1000;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px 30px;
+    background-color: var(--fundo);
+    border-bottom: 1px solid var(--verde);
 }
 
-nav h2 {
-    margin-right: auto;
-    color: var(--bege);
-    font-size: 21px;
-}
-
-nav a {
-    color: var(--branco);
-    font-size: 14px;
+.marca {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: bold;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
-nav a:hover {
-    color: var(--bege);
+.menu-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: none;
 }
 
-/* INÍCIO */
+.menu-links a {
+    display: block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.menu-links a:hover,
+.menu-links a[aria-current="page"] {
+    background-color: var(--verde);
+}
 
 .hero {
-    min-height: 650px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--verde-escuro);
-}
-
-.hero-conteudo {
-    max-width: 700px;
-    padding: 45px;
+    padding: 260px 40px 60px;
     background-color: var(--verde);
-    border-radius: 15px;
+    background-image: linear-gradient(rgba(27, 34, 24, 0.3), rgba(27, 34, 24, 0.95)), url("../img/cidade.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .hero h1 {
-    margin-bottom: 10px;
-    color: var(--bege);
-    font-size: 60px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    font-size: 70px;
+    line-height: 1.1;
+}
+
+.lema {
+    font-style: italic;
+    font-size: 24px;
+    color: var(--verde-claro);
 }
 
 .hero p {
-    margin-bottom: 25px;
-    color: var(--branco);
-    font-size: 20px;
+    max-width: 550px;
+    margin-bottom: 20px;
 }
 
-/* BOTÕES */
+.banner {
+    padding: 130px 40px 50px;
+    background-color: var(--verde);
+    border-bottom: 4px solid var(--vermelho);
+}
+
+.banner h1 {
+    font-size: 50px;
+}
+
+.banner p {
+    color: var(--verde-claro);
+    font-size: 18px;
+}
 
 .botao {
     display: inline-block;
-    padding: 11px 24px;
-    background-color: var(--verde-claro);
-    color: var(--branco);
+    margin-right: 10px;
+    padding: 10px 22px;
+    background-color: var(--vermelho);
+    color: white;
+    font-weight: bold;
     text-decoration: none;
-    text-transform: uppercase;
     border-radius: 6px;
 }
 
 .botao:hover {
-    background-color: var(--vermelho);
+    background-color: var(--vermelho-claro);
+}
+
+.botao.sec {
+    background-color: transparent;
+    border: 2px solid var(--texto);
 }
 
 .botao-topo {
     position: fixed;
-    right: 25px;
-    bottom: 25px;
-    padding: 8px 13px;
-    background-color: var(--verde);
-    color: var(--branco);
+    right: 20px;
+    bottom: 20px;
+    padding: 8px 14px;
+    background-color: var(--vermelho);
+    color: white;
     text-decoration: none;
     font-size: 22px;
     border-radius: 6px;
-    z-index: 1000;
 }
-
-.botao-topo:hover {
-    background-color: var(--vermelho);
-}
-
-/* SEÇÕES */
 
 .secao {
-    max-width: 1150px;
+    max-width: 1100px;
     margin: auto;
-    padding: 80px 40px;
+    padding: 70px 30px;
 }
 
-.secao > h2 {
-    margin-bottom: 45px;
-    color: var(--verde);
+.secao h2 {
     font-size: 32px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    margin-bottom: 15px;
 }
 
-/* CONTEÚDO */
+.intro {
+    margin-bottom: 30px;
+    color: var(--verde-claro);
+}
+
+.aviso {
+    margin-bottom: 25px;
+    padding: 10px 15px;
+    background-color: var(--card);
+    border-left: 4px solid var(--vermelho-claro);
+}
+
+.faixa {
+    background-color: var(--papel);
+    color: var(--escuro);
+}
+
+.faixa h2,
+.faixa h3 {
+    color: var(--verde);
+}
+
+.faixa .intro {
+    color: var(--escuro);
+}
+
+.faixa .card h3 {
+    color: var(--texto);
+}
 
 .conteudo {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
     align-items: center;
-}
-
-.conteudo h3 {
-    margin-bottom: 15px;
-    color: var(--verde);
-    font-size: 25px;
-    text-transform: uppercase;
 }
 
 .conteudo p {
     margin-bottom: 15px;
-    color: var(--texto);
-    font-size: 16px;
 }
 
 .conteudo img {
     width: 100%;
-    max-height: 400px;
+    height: 300px;
     object-fit: cover;
-    display: block;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
-/* CARDS */
+.ficha {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 6px 15px;
+    margin-top: 20px;
+}
+
+.ficha dt {
+    color: var(--verde-claro);
+    font-weight: bold;
+}
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
 .card {
+    background-color: var(--card);
+    color: var(--texto);
+    border: 1px solid var(--verde);
+    border-radius: 8px;
     overflow: hidden;
-    background-color: var(--verde);
-    border-radius: 10px;
-}
-
-.card:hover {
-    background-color: var(--verde-claro);
 }
 
 .card img {
-    width: 100%;
-    height: 280px;
     display: block;
+    width: 100%;
+    height: 320px;
     object-fit: cover;
+}
+
+.card-corpo {
+    padding: 20px;
 }
 
 .card h3 {
-    padding: 20px 20px 8px;
-    color: var(--bege);
     font-size: 21px;
-    text-transform: uppercase;
+    margin-bottom: 8px;
 }
 
-.card p {
-    padding: 0 20px 20px;
-    color: var(--branco);
-}
-
-.card span {
-    display: block;
-    padding: 0 20px 20px;
-    color: #CFC5A7;
-    text-transform: uppercase;
+.meta {
+    color: var(--verde-claro);
     font-size: 14px;
 }
 
-/* JOGOS */
-
-.jogo img {
-    height: 350px;
+.lista-pers {
+    list-style: none;
 }
 
-.jogo h3 {
-    font-size: 20px;
+.lista-pers li {
+    margin-bottom: 15px;
+    padding: 18px;
+    background-color: var(--card);
+    border-left: 4px solid var(--verde-claro);
+    border-radius: 8px;
 }
 
-/* COMPRAR */
-
-.comprar {
-    max-width: 1150px;
-    text-align: center;
+.linha {
+    list-style: none;
+    padding-left: 20px;
+    border-left: 3px solid var(--verde);
 }
 
-.comprar > p {
-    margin-top: -25px;
-    margin-bottom: 40px;
-    color: var(--texto);
+.linha li {
+    padding-bottom: 20px;
 }
 
-.compra {
-    padding-bottom: 25px;
+.linha time {
+    display: block;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--vermelho);
 }
 
-.compra h3 {
-    padding: 25px 20px 8px;
+.estagios {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-.compra p {
-    padding: 0 20px 20px;
+.estagios li {
+    padding-top: 10px;
+    border-top: 6px solid var(--vermelho);
 }
 
-.compra .botao {
-    margin-bottom: 5px;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-/* SÉRIE */
-
-#serie {
-    max-width: none;
-    background-color: var(--verde-claro);
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--verde-claro);
 }
 
-#serie .conteudo {
-    max-width: 1050px;
-    margin: auto;
+.lojas {
+    list-style: none;
 }
 
-#serie .conteudo h3,
-#serie .conteudo p {
-    color: var(--branco);
+.lojas li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    background-color: var(--card);
+    border-radius: 8px;
 }
-
-#serie .conteudo img {
-    max-height: 400px;
-    object-fit: cover;
-}
-
-/* RODAPÉ */
 
 footer {
-    padding: 40px 20px;
+    padding: 40px 30px;
     text-align: center;
-    background-color: var(--verde);
-    border-radius: 15px 15px 0 0;
+    background-color: #121710;
 }
 
 footer h3 {
     margin-bottom: 8px;
-    color: var(--bege);
 }
 
 footer p {
-    color: var(--branco);
+    color: var(--verde-claro);
 }
