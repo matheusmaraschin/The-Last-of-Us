@@ -2,7 +2,7 @@
 
 Site de fã sobre a franquia **The Last of Us**, feito como trabalho da disciplina de Desenvolvimento Web I.
 
-**Site publicado:** [COLE AQUI O LINK DO GITHUB PAGES]
+**Site publicado:** [https://matheusmaraschin.github.io/The-Last-of-Us/]
 
 ## Sobre o projeto
 
