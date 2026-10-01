@@ -6,6 +6,8 @@ Site de fã sobre a franquia **The Last of Us**, feito como trabalho da discipli
 
 **Relatório de aprendizagem:** [RELATORIO.md](RELATORIO.md)
 
+**Repositório do Github** https://github.com/matheusmaraschin/The-Last-of-Us
+
 ## Sobre o projeto
 
 O site apresenta os jogos, os personagens, a história e a série The Last of Us. Foi feito apenas com **HTML e CSS**, sem JavaScript e sem framework, e publicado no **GitHub Pages**.
